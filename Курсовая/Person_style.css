@@ -1,0 +1,167 @@
+﻿body {
+    font-family: Raleway;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000E41;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    position: absolute;
+    z-index: 20;
+    margin-top: 3vmin;
+}
+
+.f {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    height: 30vmin;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vmin;
+    width: 100%;
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vmin;
+    width: 100%;
+    text-align: center;
+    margin-top: 3vmin;
+}
+
+footer:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    height: 0.1vmin;
+    background: white;
+}
+
+#home {
+    width: 80%;
+    height: 290vmin;
+    background: white;
+    margin-top: 15vmin;
+    outline: 2px dashed #000E41; /* Ширина, вид и цвет рамки */
+    outline-offset: -10px; /* Выводим рамку внутри элемента */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #home h3 {
+        color: #000E41;
+        font-size: 5vmin;
+        text-align: center;
+    }
+.info{
+    width:80%;
+    height:70vmin;
+    background:#000E41;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.photo{
+    width:40%;
+    height:50vmin;
+   
+}
+.photo img{
+    width:100%;
+    height:110%;
+}
+.info_in{
+    width:40%;
+    height: 50vmin;
+    border: 0.5vmin dashed white;
+    font-size:3vmin;
+    padding:2vmin;
+}
+span {
+    color: #F3C34E;
+}
+.citate {
+    margin:5vmin;
+    width: 80%;
+    height: 30vmin;
+    background:#95d0f4;
+    border-radius:5vmin;
+    color:white;
+    font-size:4vmin;
+}
+.citate p{
+    padding:3%;
+}
+.opisanie{
+    width:80%;
+    color:#000E41;
+    font-size:3vmin;
+    line-height:4vmin;
+}
+.slideshow-container{
+    max-width:1000px;
+    position:relative;
+    margin:auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    margin-top:-22px;
+    padding:16px;
+    color:red;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    right:0;
+    border-radius:3px 0 0 3px;
+}
+
+.text{
+    color:#000E41;
+    font-size:12px;
+    padding:8px 12px;
+    position:absolute;
+    top:0;
+}
+.dot{
+    cursor:pointer;
+    height:13px;
+    width:13px;
+    margin: 0 2px;
+    background-color:#bbb;
+    border-radius:50%;
+}

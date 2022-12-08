@@ -1,0 +1,204 @@
+﻿body {
+    font-family: Raleway;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000E41;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    position: absolute;
+    z-index: 20;
+    margin-top: 3vmin;
+}
+
+.f {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    height: 30vmin;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vmin;
+    width: 100%;
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vmin;
+    width: 100%;
+    text-align: center;
+    margin-top: 3vmin;
+}
+
+footer:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    height: 0.1vmin;
+    background: white;
+}
+
+#home {
+    width: 80%;
+    height: 250vmin;
+    background: white;
+    margin-top: 15vmin;
+    outline: 2px dashed #000E41; /* Ширина, вид и цвет рамки */
+    outline-offset: -10px; /* Выводим рамку внутри элемента */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #home h3 {
+        color: #000E41;
+        font-size: 5vmin;
+        text-align: center;
+    }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 70vmin 70vmin 70vmin;
+    height: 215vmin;
+    width: 90%;
+}
+
+.about {
+    grid-row-start: 1;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    width: 90vmin;
+    color: black;
+}
+
+.about img {
+    width: 80%;
+    height: 90%;
+    margin: 3%;
+}
+
+.about:nth-child(2) img {
+    width: 100%;
+    height: 110%;
+}
+
+.about_film {
+    display: flex;
+    flex-direction: column;
+}
+
+    .about_film:nth-child(2) {
+        border-right: dotted 3px #000E41;
+        border-bottom: dotted 3px #000E41;
+    }
+
+    .about_film:nth-child(3) {
+        border-left: dotted 3px #000E41;
+        border-bottom: dotted 3px #000E41;
+    }
+
+    .about_film:nth-child(4) {
+        border-right: dotted 3px #000E41;
+        border-top: dotted 3px #000E41;
+    }
+
+    .about_film:nth-child(5) {
+        border-left: dotted 3px #000E41;
+        border-top: dotted 3px #000E41;
+    }
+
+    .about_film:nth-child(2n+1) {
+        margin-left: 3%;
+    }
+
+    .about_film:nth-child(2n) {
+        margin-right: 3%;
+    }
+
+    .about_film h1 {
+        color: black;
+        text-align: center;
+    }
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    width: 50vmin;
+}
+
+.o_filme {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    text-align: center;
+}
+
+    .o_filme img {
+        width: 50%;
+        height: 50%;
+        transform: translateY(4vmin);
+    }
+
+.about_film:nth-child(3) .o_filme img {
+    width: 50%;
+    height: 60%;
+}
+
+.about_film:nth-child(3) .o_filme p, .about_film:nth-child(4) .o_filme p, .about_film:nth-child(5) .o_filme p {
+    margin-left: 5vmin;
+}
+.about_film:nth-child(2) .sort {
+    margin-top: -12vmin;
+}
+
+.about_film:nth-child(3) .sort {
+    margin-top: -25vmin;
+}
+
+.about_film:nth-child(4) .sort, .about_film:nth-child(5) .sort {
+    margin-top: -20vmin;
+}
+
+.sort {
+    color: black;
+}
+
+    .sort ul {
+        margin-left: 15vmin;
+    }
+
+    .sort a {
+        text-decoration: none;
+        color: black;
+    }
